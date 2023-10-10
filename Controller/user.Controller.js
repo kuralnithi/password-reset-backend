@@ -14,7 +14,10 @@ try {
     const {username,emailid,password} = req.body;
 
 
-    const checkuser = userModel.findOne({$or:[{ username: username },{password:password}]})
+    const checkuser =await userModel.findOne({$or:[{ username: username },{password:password}]})
+    
+    console.log(checkuser);
+    
     if (checkuser) {
 
         console.log('user already exist');
