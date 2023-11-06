@@ -172,7 +172,7 @@ export const resetPassword = async (req, res) => {
         service: 'gmail',
         auth: {
             user: emailid,
-            pass: ''
+            pass: 'ltfo zarx kkcb sklt'
         }   
 
 

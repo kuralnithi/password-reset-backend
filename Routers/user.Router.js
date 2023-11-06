@@ -3,7 +3,6 @@ import { getUserById, loginUser, registerUser, resetPassword, resetPasswordpage 
 import { authMiddleware } from '../Middleware/Auth.middleware.js';
 
 
-
 const router = express.Router();
 
 router.post('/user/register', registerUser);
