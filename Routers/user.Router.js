@@ -1,6 +1,6 @@
 import express from 'express';
 import { getUserById, loginUser, registerUser, resetPassword, resetPasswordpage } from '../Controller/user.Controller.js';
-import { authMiddleware } from '../Middleware/auth.middleware.js';
+import { authMiddleware } from '../Middleware/Auth.middleware.js';
 
 
 
