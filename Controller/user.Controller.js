@@ -88,8 +88,8 @@ try {
 
 
     const token = jwt.sign({_id:user._id},process.env.SECTERT_KEY);
-res.status(200).json({ message: "Login successfully", token: token });
-console.log("token sendinf from BE>>>",token);
+    res.status(200).json({ message: "Login successfully", token: token });
+    console.log("token sendinf from BE>>>",token);
 
 } catch (error) {
     console.log(error);
@@ -171,7 +171,7 @@ export const resetPassword = async (req, res) => {
     const mailTransporter = createTransport({
       service: "gmail",
       auth: {
-        user: emailid,
+        user: 'kuralnithi1999@gmail.com',
         pass: process.env.apppaassword
       },
     });
