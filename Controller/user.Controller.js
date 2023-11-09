@@ -178,15 +178,10 @@ export const resetPassword = async (req, res) => {
 
     
     const message = {
-      
-        
-        from:emailid,
-        to: "kuralnithi1999@gmail.com",
-        subject: "PASSWORD RESET MAIL",
-        text: `reset token>>>>    ${resetToken}`
-
-
-
+      from: "kuralnithi1999@gmail.com",
+      to: emailid,
+      subject: "PASSWORD RESET MAIL",
+      text: `reset token>>>>    ${resetToken}`,
     };
  
     
